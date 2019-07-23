@@ -1,0 +1,58 @@
+/**index.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 300rpx;
+}
+
+.container image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.container .title {
+  padding: 40rpx;
+  color: white;
+  font-size: 32rpx;
+}
+
+.container  .big-title {
+  padding: 40rpx;
+  color: white;
+  font-size: 80rpx;
+}
+
+.container .tip {
+  color: white;
+  font-size: 28rpx;
+}
+
+.container .result {
+  padding: 20rpx 0;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 24rpx;
+}
+
+.container .result .time {
+  margin-right: 40rpx;
+  color: white;
+  font-size: 24rpx;
+}
+
+.container .result .tries {
+  color: white;
+  font-size: 24rpx;
+}
+
+.container .share {
+  background: #ffe432;
+  color: black;
+  padding: 0 40rpx;
+  border-radius: 40rpx;
+  font-weight: bolder;
+  font-size: 32rpx;
+  margin-top: 40rpx;
+}
