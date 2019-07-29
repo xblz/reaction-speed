@@ -4,3 +4,43 @@ page {
   height: 100%;
   width: 100%;
 }
+
+.mg12 {
+  margin: 12rpx;
+}
+
+.mgt12 {
+  margin-top: 12rpx;
+}
+
+.mgr12 {
+  margin-right: 12rpx;
+}
+
+.mgb12 {
+  margin-bottom: 12rpx;
+}
+
+.mgl12 {
+  margin-left: 12rpx;
+}
+
+.mg20 {
+  margin: 20rpx;
+}
+
+.mgt20 {
+  margin-top: 20rpx;
+}
+
+.mgr20 {
+  margin-right: 20rpx;
+}
+
+.mgb20 {
+  margin-bottom: 20rpx;
+}
+
+.mgl20 {
+  margin-left: 20rpx;
+}

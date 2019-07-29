@@ -1,0 +1,14 @@
+<v-header></v-header>
+<view class="reaction" style="background:{{bgColor[step]}}" bindtap="bindViewTap">
+  <image class="icon" src="/images/{{icon}}.png"></image>
+  <text class="{{step==='red'||step==='green'||result.length>0||title==='时间过短'?'big-title':'title'}}">{{title}}</text>
+  <text class="tip">{{tip}}</text>
+  <view class="result" wx:if='{{result.length}}'>
+    平均 |
+    <text class="time">{{time}}</text> 尝试 |
+    <text class="tries">{{result.length+'/5'}}</text>
+  </view>
+  <view wx:if='{{result.length===5}}' class='again'>再试一次</view>
+  <button wx:if='{{result.length===5}}' class='share' open-type='share' hover-class="none" catchtap>
+    <image src="/images/share.png"></image>分享成绩</button>
+</view>

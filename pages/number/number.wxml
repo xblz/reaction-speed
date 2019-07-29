@@ -1,0 +1,27 @@
+<v-header></v-header>
+<view class="start" wx:if="{{step===0}}" bindtap="onClickStart">
+  <image class="icon" src="/images/number.png"></image>
+  <text class="title">最厉害的人可以瞬间记住7个数字你能做到吗？</text>
+  <text class="tip">单击任意位置开始</text>
+</view>
+<view class="wait" wx:if="{{step===1}}">
+  <text class="level">Level {{level}}</text>
+  <text class="number">{{number}}</text>
+  <progress class="progress" active-mode="forwards" active percent="{{progress}}" backgroundColor="white" color="#2084D2" />
+</view>
+<view class="input" wx:if="{{step===2}}">
+  <text class="title">你看到的数字是多少</text>
+  <text class="tip">请填写结果并提交</text>
+  <input type="tel" bindinput="getInput"></input>
+  <button bindtap="onClickSubmit">提交</button>
+</view>
+<view class="result" wx:if="{{step===3}}">
+  <text class="title">数字</text>
+  <text class="tip">{{number}}</text>
+  <text class="title">你的答案</text>
+  <text class="tip {{resultState?'':'err'}}">{{result}}</text>
+  <text class="level">Level {{level}}</text>
+  <button class="btn" bindtap="onClickGo">{{resultState?"继续":"再试一次"}}</button>
+  <button wx:if='{{step===3&&!resultState}}' class='share' open-type='share' hover-class="none" catchtap>
+  <image src="/images/share.png"></image>分享成绩</button>
+</view>

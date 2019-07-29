@@ -1,0 +1,5 @@
+<view class="v-tip-card" style="border-top: 12rpx solid {{color}};">
+  <image class="v-tip-card-image" src="./images/{{icon}}.png"></image>
+  <label class="v-tip-card-title">{{title}}</label>
+  <label class="v-tip-card-content">{{content}}</label>
+</view>

@@ -1,0 +1,32 @@
+.v-tip-card {
+  width: 690rpx;
+  height: 360rpx;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(227, 227, 227, 1);
+  border-top: 12rpx solid #ffd200;
+  box-shadow: 0px 0px 8rpx 0px rgba(0, 0, 0, 0.09);
+  border-radius: 4rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.v-tip-card-image {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.v-tip-card-title {
+  font-size: 36rpx;
+  font-weight: bolder;
+  color: #333;
+  margin: 28rpx 0 24rpx 0;
+}
+
+.v-tip-card-content {
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #999;
+}

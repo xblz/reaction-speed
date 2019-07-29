@@ -1,0 +1,3 @@
+<view class="home">
+  <v-tip-card class="mgt12 mgb12" wx:for="{{cardList}}" wx:key="{{index}}" color="{{item.color}}" icon="{{item.icon}}" title="{{item.title}}" content="{{item.content}}" data-path="{{item.path}}" bindtap="onClickCard" />
+</view>

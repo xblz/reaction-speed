@@ -1,0 +1,12 @@
+<view style="padding-top:{{someData.statusBarHeight+someData.titleBarHeight}}px">
+  <view class="v-header" style="background-color: {{bgColor}};">
+    <view class="status-bar" style="height:{{someData.statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{someData.titleBarHeight}}px">
+      <view wx:if="{{isShowBack=='true'}}" class='v-nav-back icon-back' bindtap='onClickBack'></view>
+      <view wx:if="{{isShowBack=='false'}}" class='v-nav-back'></view>
+      <view class="v-title">{{innerTitle}}</view>
+      <view class="v-nav-right"></view>
+    </view>
+  </view>
+</view>
+<slot></slot>

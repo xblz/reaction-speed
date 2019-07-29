@@ -1,0 +1,94 @@
+.reaction {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reaction .icon {
+  margin-top: 280rpx;
+  width: 142rpx;
+  height: 142rpx;
+}
+
+.reaction .title {
+  margin-top: 114rpx;
+  color: white;
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+.reaction .big-title {
+  margin-top: 114rpx;
+  color: white;
+  font-size: 54rpx;
+}
+
+.reaction .tip {
+  width: 100%;
+  color: white;
+  font-size: 30rpx;
+  font-weight: 400rpx;
+  position: fixed;
+  bottom: 214rpx;
+  display: block;
+  text-align: center;
+}
+
+.reaction .result {
+  margin-top: 60rpx;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 30rpx;
+}
+
+.reaction .result .time {
+  margin-right: 40rpx;
+  color: white;
+  font-size: 24rpx;
+}
+
+.reaction .result .tries {
+  color: white;
+  font-size: 24rpx;
+}
+
+.reaction .again {
+  width: 462rpx;
+  height: 90rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+  color: white;
+  border: 2px solid white;
+  border-radius: 44rpx;
+  margin-top: 170rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reaction .share {
+  background: transparent;
+  color: white;
+  padding: 70rpx;
+  font-weight: bolder;
+  font-size: 30rpx;
+  position: fixed;
+  border: none;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.reaction .share  image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 20rpx;
+}
+
+button::after {
+  border: none;
+}

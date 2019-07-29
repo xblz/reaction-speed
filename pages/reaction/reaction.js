@@ -1,15 +1,11 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
 Page({
   data: {
     bgColor: {
-      blue: '#2b87d1',
-      red: '#ce2636',
-      green: '#4bdb6a'
+      blue: '#229FFC',
+      red: '#F24545',
+      green: '#04CB53'
     },
-    step: 'red',
+    step: 'blue',
     icon: 'bolt',
     title: '当红色变为绿色时，请尽快单击',
     tip: '单击任意位置开始',
@@ -69,11 +65,10 @@ Page({
           randomTime: '',
           timeout: '',
           title: '时间过短',
-          tip: '点击重新开始',
+          tip: '点击继续',
           step: 'blue',
           icon: 'wait',
-          result:[],
-          time: (this.sumArr(result) / result.length ).toFixed(2) + 'ms'
+          time: (this.sumArr(result) / result.length).toFixed(2) + 'ms'
         })
       } else {
         this.setData({
@@ -94,8 +89,7 @@ Page({
             startTime: '',
             endTime: '',
             timeout: '',
-            title: '测试结束',
-            tip: '测试结果如下，点击重新开始'
+            tip: ''
           })
         }
 
@@ -110,23 +104,23 @@ Page({
     return sum;
   },
   randomNum() {
-    return parseInt(Math.random() * (10000 - 1000 + 1) + 1000, 10);
+    return parseInt(Math.random() * (4000 - 2000 + 1) + 2000, 10);
   },
   onShareAppMessage() {
-    this.setData({
-      startTime: '',
-      randomTime: '',
-      timeout: '',
-      title: '当红色变为绿色时，请尽快单击',
-      tip: '单击任意位置开始',
-      endTime: '',
-      step: 'red',
-      icon:'bolt',
-      result: []
-    })
+    // this.setData({
+    //   startTime: '',
+    //   randomTime: '',
+    //   timeout: '',
+    //   title: '当红色变为绿色时，请尽快单击',
+    //   tip: '单击任意位置开始',
+    //   endTime: '',
+    //   step: 'blue',
+    //   icon: 'bolt',
+    //   result: []
+    // })
     return {
       title: '反应速度测试',
-      path: `/pages/index/index`
+      path: `/pages/home/home`
     }
   },
 })

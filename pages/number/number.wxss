@@ -1,0 +1,161 @@
+.start, .wait, .input, .result {
+  background: #229ffc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start .icon {
+  margin-top: 280rpx;
+  width: 142rpx;
+  height: 142rpx;
+}
+
+.start .title {
+  margin-top: 114rpx;
+  color: white;
+  font-size: 40rpx;
+  font-weight: 500;
+  padding: 0 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.start .tip {
+  width: 100%;
+  color: white;
+  font-size: 30rpx;
+  font-weight: 400rpx;
+  position: fixed;
+  bottom: 214rpx;
+  display: block;
+  text-align: center;
+}
+
+.wait .level {
+  font-size: 40rpx;
+  color: white;
+  margin-top: 280rpx;
+}
+
+.wait .number {
+  font-size: 100rpx;
+  color: white;
+  margin-top: 120rpx;
+  width: 500rpx;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: keep-all;
+  overflow: hidden;
+}
+
+.wait .progress {
+  width: 300rpx;
+  margin-top: 120rpx;
+  -moz-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH();
+}
+
+.input .title {
+  margin-top: 400rpx;
+  color: white;
+  font-size: 54rpx;
+  font-weight: 500;
+  padding: 0 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.input .tip {
+  margin-top: 40rpx;
+  color: #b8e0ff;
+  font-size: 30rpx;
+}
+
+.input input {
+  margin-top: 70rpx;
+  text-align: center;
+  width: 580rpx;
+  height: 140rpx;
+  color: white;
+  font-size: 80rpx;
+  padding: 0 40rpx;
+  background: rgba(32, 132, 210, 1);
+  border-radius: 70rpx;
+}
+
+.input button {
+  margin-top: 128rpx;
+  width: 300rpx;
+  height: 90rpx;
+  color: white;
+  background: transparent;
+  border: 2rpx solid rgba(255, 255, 255, 1);
+  border-radius: 44rpx;
+}
+
+.result {
+  padding-top: 240rpx;
+}
+
+.result .title {
+  font-size: 36rpx;
+  color: #b8e0ff;
+  margin-top: 40rpx;
+}
+
+.result .tip {
+  font-size: 64rpx;
+  color: white;
+  margin-top: 40rpx;
+}
+
+.result .err {
+  color: black;
+  text-decoration: line-through;
+}
+
+.result .level {
+  font-size: 72rpx;
+  color: white;
+  margin-top: 100rpx;
+}
+
+.result .btn {
+  margin-top: 128rpx;
+  width: 460rpx;
+  height: 90rpx;
+  color: white;
+  background: transparent;
+  border: 2rpx solid rgba(255, 255, 255, 1);
+  border-radius: 44rpx;
+}
+
+.share {
+  background: transparent;
+  color: white;
+  padding: 70rpx;
+  font-weight: bolder;
+  font-size: 30rpx;
+  position: fixed;
+  border: none;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.share  image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 20rpx;
+}
+
+button::after {
+  border: none;
+}
