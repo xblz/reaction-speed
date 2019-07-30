@@ -1,2 +1,12 @@
-<!--pages/vision/vision.wxml-->
-<text>pages/vision/vision.wxml</text>
+<v-header></v-header>
+<view class="start" bindtap="onClickStart" wx:if="{{step===0}}">
+  <image class="icon" src="/images/vision.png"></image>
+  <text class="title">记住方块的位置</text>
+  <text class="tip">单击任意位置开始</text>
+</view>
+<view class="wait" wx:if="{{step===1}}">
+  <text class="level">Level {{level}}<text class="line">|</text>❤ x {{live}}</text>
+  <view class="item-group">
+    <view wx:for="{{count}}" wx:key="{{index}}" class="item" style="width:{{width}}px;height:{{width}}px;"></view>
+  </view>
+</view>

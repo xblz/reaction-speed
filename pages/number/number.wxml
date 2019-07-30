@@ -12,7 +12,7 @@
 <view class="input" wx:if="{{step===2}}">
   <text class="title">你看到的数字是多少</text>
   <text class="tip">请填写结果并提交</text>
-  <input type="tel" bindinput="getInput"></input>
+  <input type="number" bindinput="getInput"></input>
   <button bindtap="onClickSubmit">提交</button>
 </view>
 <view class="result" wx:if="{{step===3}}">

@@ -1,1 +1,59 @@
-/* pages/vision/vision.wxss */
+.start, .wait {
+  background: #229ffc;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start .icon {
+  margin-top: 280rpx;
+  width: 142rpx;
+  height: 142rpx;
+}
+
+.start .title {
+  margin-top: 114rpx;
+  color: white;
+  font-size: 40rpx;
+  font-weight: 500;
+  padding: 0 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.start .tip {
+  width: 100%;
+  color: white;
+  font-size: 30rpx;
+  font-weight: 400rpx;
+  position: fixed;
+  bottom: 214rpx;
+  display: block;
+  text-align: center;
+}
+
+.wait .level {
+  font-size: 40rpx;
+  color: white;
+  margin: 280rpx 0 120rpx 0;
+}
+
+.wait .line {
+  margin: 0 40rpx;
+}
+
+.wait .item-group {
+  padding: 0 30px;
+}
+
+.wait .item {
+  background: #2084d2;
+  margin: 4px;
+  display: inline-block;
+  border-radius: 8rpx;
+}
